@@ -9,6 +9,10 @@ def play(board)
       break
     end
   end
+  if(won?(board))
+      puts winner(board)
+      break
+    end
 end
 
 def turn(board)
