@@ -5,7 +5,7 @@ def play(board)
   while !over?(board)
     turn(board)
     if(won?(board))
-      winner(board)
+      puts winner(board)
       break
     end
   end
