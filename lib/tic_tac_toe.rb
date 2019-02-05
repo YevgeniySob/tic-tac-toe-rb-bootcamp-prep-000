@@ -6,9 +6,8 @@ def play(board)
     turn(board)
   end
   if(won?(board))
-      puts winner(board)
-      break
-    end
+    puts winner(board)
+  end
 end
 
 def turn(board)
