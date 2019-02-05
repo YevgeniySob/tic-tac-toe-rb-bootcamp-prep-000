@@ -62,10 +62,10 @@ def won?(board)
     if(win_combo.all? {|index| (position_taken?(board,index))})
       if(win_combo.all? {|ele| board[ele] == "X"})
         winner = "X"
-        return true
+        return "Congratulations X!"
       elsif(win_combo.all? {|ele| board[ele] == "O"})
         winner = "O"
-        return true
+        return "Congratulations O!"
       end
     end
   end
