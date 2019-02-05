@@ -97,9 +97,9 @@ def winner(board)
   WIN_COMBINATIONS.each do |win_combo|
     if(win_combo.all? {|index| (position_taken?(board,index))})
       if(win_combo.all? {|ele| board[ele] == "X"})
-        return "Congratulations X!"
+        puts "Congratulations X!"
       elsif(win_combo.all? {|ele| board[ele] == "O"})
-        return "Congratulations O!"
+        puts "Congratulations O!"
       end
     end
   end
